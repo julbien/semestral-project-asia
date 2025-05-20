@@ -55,43 +55,8 @@ Replace `your_password` with your MySQL password.
 ---------------------------------------------------------------------------------------------------------
 4. Set up the database:
    - Open MySQL command line
-   - Run the following SQL commands:
-
-sql
-CREATE DATABASE IF NOT EXISTS student_dashboard;
-USE student_dashboard;
-
-CREATE TABLE students (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100),
-    gender ENUM('male', 'female'),
-    grade DECIMAL(4,2),
-    subject VARCHAR(50),
-    passed BOOLEAN
-);
-
-CREATE TABLE attendance (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    student_id INT,
-    status ENUM('present', 'absent', 'late'),
-    FOREIGN KEY (student_id) REFERENCES students(id)
-);
-
--- Insert sample data
-INSERT INTO students (name, gender, grade, subject, passed) VALUES
-('John Doe', 'male', 85.5, 'Mathematics', true),
-('Jane Smith', 'female', 92.0, 'Science', true),
-('Mike Johnson', 'male', 78.5, 'English', true),
-('Sarah Williams', 'female', 88.0, 'Mathematics', true),
-('David Brown', 'male', 65.0, 'Science', false);
-
-INSERT INTO attendance (student_id, status) VALUES
-(1, 'present'),
-(2, 'present'),
-(3, 'late'),
-(4, 'present'),
-(5, 'absent');
-```
+   - Go to backend folder and open the data.sql
+   - Copy and paste it to mysql command line
 ---------------------------------------------------------------------------------------------------------
 3. Frontend Setup
 
