@@ -1,0 +1,45 @@
+body {
+    background-color: #f4f6f8;
+  }
+  .search-bar {
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 0.5rem 1rem;
+    outline: none;
+  }
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e6f0fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1976d2;
+    font-size: 1.2rem;
+  }
+  .card-stat {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    background: #fff;
+    padding: 1.5rem 1rem;
+  }
+  .card-stat .stat-title {
+    font-size: 1rem;
+    color: #888;
+  }
+  .card-stat .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1976d2;
+  }
+  .dashboard-charts .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    background: #fff;
+    padding: 1.5rem 1rem;
+  }
+  
